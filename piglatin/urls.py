@@ -19,6 +19,6 @@ from . import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls), #create a URL object, regex it to admin, direct it to the admin view
-    url(r'^piglatin_input/', views.piglatin_input),
-    url(r'^piglatin_output/', views.piglatin_output)
+    url(r'^piglatin_input/', views.piglatin_input,),
+    url(r'^piglatin_output/', views.piglatin_output, name ='piglatin_output')
 ]

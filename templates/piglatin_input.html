@@ -1,7 +1,6 @@
 <h1> Pig Latin Translator Input Page </h1>
 
-<form action="/piglatin_output" method="get">
-  <label for="piglatin_input"> Enter text: </label>
-  <input id="piglatin_input" type="text" name="piglatin_input" value="{{ translation_output }}">
-  <input type="submit" value="Translate">
+<form action="{% url 'piglatin_output' %}"> <!-- url refers to the name defined for urls in urls file -->
+  <input type="text" name="piglatin_input_box"/>
+  <input type="submit" value="Translate" />
 </form>
