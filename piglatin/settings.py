@@ -23,6 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '8a7)3g_8m0sw7q@s6(_qw^9l8-lp*@726kw%nc@#h9lg0d$@rv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# True = it will show error info when it errors out, ie: 404 errors with context
+# False = it will not show error info when it errors out, ie: 404 error with no context, just the error
 DEBUG = True
 
 ALLOWED_HOSTS = []
