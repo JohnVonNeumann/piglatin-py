@@ -1,5 +1,7 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def helloworld(request):
-    html = "<html><body> Hello, world! </body></html>"
-    return HttpResponse(html)
+    return render(request, 'piglatin-py/piglatin_input.html', {
+        'foo': 'bar',
+    }, content_type='application/xhtml+xml')
