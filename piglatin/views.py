@@ -1,8 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def helloworld(request):
+def piglatin_input(request):
     return render(request, 'piglatin_input.html')
 
-def translation_output(request):
+def piglatin_output(request):
     return render(request, 'piglatin_output.html')
