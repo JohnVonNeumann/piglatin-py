@@ -6,3 +6,4 @@ def piglatin_input(request):
 
 def piglatin_output(request):
     return render(request, 'piglatin_output.html')
+    return HttpResponse( "u r an" + request.GET['piglatin_input'])
