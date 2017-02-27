@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['templates'],
-        'APP_DIRS': True,
+        'APP_DIRS': True, #needs to be edited when new folders are added in order to locate files internally ie for html view files
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',

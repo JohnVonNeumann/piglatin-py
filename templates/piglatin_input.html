@@ -1,1 +1,7 @@
-Hey this is the HTML page!
+<h1> Pig Latin Translator Input Page </h1>
+
+<form action="/translation_output" method="get">
+  <label for="translation_output"> Enter text: </label>
+  <input id="translation_output" type="text" name="translation_output" value="{{ translation_output }}">
+  <input type="submit" value="Translate">
+</form>
